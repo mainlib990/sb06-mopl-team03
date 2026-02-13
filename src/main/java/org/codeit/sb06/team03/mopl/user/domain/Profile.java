@@ -23,7 +23,7 @@ import java.util.UUID;
 public class Profile extends AbstractAggregateRoot<Profile> {
 
     @Id
-    @Column(name = "id")
+    @Column(name = "value")
     private UUID accountId;
 
     @Version
@@ -38,7 +38,7 @@ public class Profile extends AbstractAggregateRoot<Profile> {
     private TimeoutImage timeoutImage;
 
     @MapsId("accountId")
-    @JoinColumn(name = "id")
+    @JoinColumn(name = "value")
     @OneToOne
     private Account account;
 

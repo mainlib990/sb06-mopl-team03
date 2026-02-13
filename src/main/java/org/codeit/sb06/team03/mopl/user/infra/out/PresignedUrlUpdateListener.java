@@ -1,7 +1,6 @@
 package org.codeit.sb06.team03.mopl.user.infra.out;
 
 import jakarta.persistence.PostLoad;
-import org.codeit.sb06.team03.mopl.s3.S3Service;
 import org.codeit.sb06.team03.mopl.user.domain.policy.PresignedUrlTimeoutPolicy;
 import org.codeit.sb06.team03.mopl.user.domain.vo.TimeoutImage;
 import org.springframework.stereotype.Component;

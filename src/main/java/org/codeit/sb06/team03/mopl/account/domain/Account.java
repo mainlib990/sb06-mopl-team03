@@ -32,7 +32,7 @@ import static org.codeit.sb06.team03.mopl.account.domain.event.AccountEvent.*;
 public class Account extends AbstractAggregateRoot<Account> {
 
     @Id
-    @Column(name = "id", nullable = false)
+    @Column(name = "value", nullable = false)
     private UUID id;
 
     @NotNull

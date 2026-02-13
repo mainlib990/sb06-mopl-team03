@@ -20,7 +20,7 @@ import java.util.UUID;
 public class TimeoutImage {
 
     @Id
-    @Column(name = "id")
+    @Column(name = "value")
     private UUID id;
 
     @Column(name = "image_key")

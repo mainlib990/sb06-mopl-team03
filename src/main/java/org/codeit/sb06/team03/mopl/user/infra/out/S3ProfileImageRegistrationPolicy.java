@@ -1,6 +1,5 @@
 package org.codeit.sb06.team03.mopl.user.infra.out;
 
-import org.codeit.sb06.team03.mopl.s3.S3Service;
 import org.codeit.sb06.team03.mopl.user.domain.exception.ImageRegistrationFailedException;
 import org.codeit.sb06.team03.mopl.user.domain.policy.PresignedUrlTimeoutPolicy;
 import org.codeit.sb06.team03.mopl.user.domain.policy.ProfileImageKeyGenerationPolicy;

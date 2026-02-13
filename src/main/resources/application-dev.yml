@@ -37,6 +37,8 @@ mopl:
       access-key: ${AWS_ACCESS_KEY}
       secret-key: ${AWS_SECRET_KEY}
       signature-duration-in-hours: 1
+    max-attempts: 3
+    bucket-name: "sb06-part3-team3-post-image"
   jwt:
     access-token:
       secret: ${JWT_ACCESS_TOKEN_SECRET:sb06-mopl-team03-jwt-temporary-secret}
@@ -45,3 +47,5 @@ mopl:
       secret: ${JWT_REFRESH_TOKEN_SECRET:sb06-mopl-team03-jwt-temporary-secret}
       expiration-ms: ${REFRESH_TOKEN_EXPIRATION_MS:604800000}
     max-session: ${JWT_MAX_SESSION:1}
+  content:
+    thumbnail-namespace: "content"

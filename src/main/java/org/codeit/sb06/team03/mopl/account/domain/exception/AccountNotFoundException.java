@@ -6,7 +6,7 @@ import java.util.UUID;
 
 public class AccountNotFoundException extends AccountException {
 
-    private static final String MESSAGE_FORMAT = "Account with id '%s' not found";
+    private static final String MESSAGE_FORMAT = "Account with value '%s' not found";
     private static final String EMAIL_MESSAGE_FORMAT = "Account with email '%s' not found";
 
     public AccountNotFoundException(UUID accountId) {

@@ -259,7 +259,7 @@ public interface AccountRepository extends QuerydslJpaRepository<Account, UUID> 
 //                .from(account)
 //                .innerJoin(account.profile)
 //                .leftJoin(account.profile.timeoutImage)
-//                .where(account.id.eq(accountIdUuid))
+//                .where(account.value.eq(accountIdUuid))
 //                .fetchFirst();
 //
 //        return Optional.ofNullable(userDto);
